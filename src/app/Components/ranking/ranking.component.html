@@ -1,0 +1,69 @@
+<div class="main">
+  <div class="table">
+
+    <div class="flex-direction">
+      <div class="block">
+        <table width="120">
+          <tr>
+            <td class="text-center title" width="50" height="30">Ranking</td>
+          </tr>
+          <tr *ngFor="let ranking of arrayPositions">
+            <td class="text-center" width="50" height="30">{{ranking.ranking}}</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="block-width">
+        <table width="250">
+          <tr>
+            <td class="text-center title" width="50" height="30">Nome</td>
+            <td class="text-center title" width="50" height="30">Pontos</td>
+          </tr>
+          <tr *ngFor="let dados of data">
+            <td class="text-center" width="50" height="30">{{dados.name}}</td>
+            <td class="text-center" width="50" height="30">{{dados.points}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+
+    <div class="input-name">
+      <label>Insira o nome:</label> <br>
+      <input type="text" [disabled]="roundActual != 1" [(ngModel)]="name" />
+    </div>
+
+    <div class="input-point">
+      <label>Insira a 1º Pontuação:</label>
+      <input type="number" [disabled]="roundActual != 1" [(ngModel)]="pointOne" />
+    </div>
+
+    <div class="input-point">
+      <label>Insira a 2º Pontuação:</label>
+      <input type="number" [disabled]="roundActual != 2" [(ngModel)]="pointTwo" />
+    </div>
+
+    <div class="input-point">
+      <label>Insira a 3º Pontuação:</label>
+      <input type="number" [disabled]="roundActual != 3" [(ngModel)]="pointThree" />
+    </div>
+
+    <div class="input-point">
+      <label>Insira a 4º Pontuação:</label>
+      <input type="number" [disabled]="roundActual != 4" [(ngModel)]="pointFour" />
+    </div>
+
+    <div class="main-buttons">
+      <div class="button-column">
+        <button class="button-insert" (click)="insertValue()">Inserir pontuação</button>
+      </div>
+
+      <div class="button-column">
+        <button class="button-restart" (click)="reset()">Reiniciar</button>
+      </div>
+    </div>
+
+  </div>
+</div>

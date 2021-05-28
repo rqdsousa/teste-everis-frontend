@@ -1,0 +1,83 @@
+.main {
+    display: flex; 
+    width: 100%;
+}
+
+.column {
+    display: block; 
+    width: 70%;
+    margin: 0px 2%;
+}
+
+.input-point {
+    display: block; 
+    width: 30%; 
+    margin-bottom: 5px;
+}
+
+.input-name {
+    display: block; 
+    width: 30%; 
+    margin-bottom: 20px;
+}
+
+.table {
+    display: block; 
+}
+
+.flex-direction {
+    display: flex; 
+    flex-direction: row;
+}
+
+.block {
+    display: block;
+}
+
+.block-width {
+    display: block; 
+    margin-left: -2px;
+}
+
+.title {
+    font-weight: bold; 
+    background-color: #B0C4DE;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-buttons {
+    width: 100%; 
+    display: flex; 
+    margin-top: 20px;
+}
+
+.button-column {
+    width: 14%; 
+    display: flex;
+}
+
+.button-insert {
+    height: 30px; 
+    background-color: #F8F8FF; 
+    border-radius: 5px;
+}
+
+.button-restart {
+    width: 100%; 
+    background-color: #F8F8FF; 
+    border-radius: 5px;
+}
+
+td {
+    border: 1px solid #111;
+    background-color: #F8F8FF;
+}
+
+input {
+    height: 20px; 
+    width: 91%; 
+    border-radius: 3px;
+}
